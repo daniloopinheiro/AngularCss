@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularProjetoInicialCss": {
+    "AngularCss": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-projeto-inicial-css",
+            "outputPath": "dist/angular-css",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularProjetoInicialCss:build:production"
+              "browserTarget": "AngularCss:build:production"
             },
             "development": {
-              "browserTarget": "AngularProjetoInicialCss:build:development"
+              "browserTarget": "AngularCss:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularProjetoInicialCss:build"
+            "browserTarget": "AngularCss:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3d71be8a-1a03-4de4-a1c7-cc1a66987a5d"
   }
 }
